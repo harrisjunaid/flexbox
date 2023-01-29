@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../flexbox/styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>                
+      
+    <div class="flex-container properties">        
+        <section>
+            <h2>Flex container properties</h2>
+            <article class="flexbox-container">
+              
+                <div class="flexbox-container is-row">
+                    <div class="flex-item a">A</div>
+                    <div class="flex-item b">B</div>
+                    <div class="flex-item c">C</div>
+                    <div class="flex-item d">D</div>
+                    <div class="flex-item e">E</div>
+                </div>
+                <p><strong><code>flex-direction: row;</code></strong></p>
+            </article>
+
+            <br><br>
+
+            <article class="flexbox-container ">
+                <!-- <div class="section-heading"><h2>the difference between flex and inline-flex</h2></div> -->
+                <div class="flexbox-container is-row-reverse">
+                    <div class="flex-item a">A</div>
+                    <div class="flex-item b">B</div>
+                    <div class="flex-item c">C</div>
+                    <div class="flex-item d">D</div>
+                    <div class="flex-item e">E</div>
+                </div>
+                <p><strong><code>flex-direction: row-reverse;</code></strong></p>
+            </article>    
+            
+            <br><br><br><br>
+
+            <article class="flexbox-container">
+            
+                <div class="flexbox-container is-column">
+                    <div class="flex-item a">A</div>
+                    <div class="flex-item b">B</div>
+                    <div class="flex-item c">C</div>
+                    <div class="flex-item d">D</div>
+                    <div class="flex-item e">E</div>
+                </div>
+                <p><strong><code>flex-direction: column;</code></strong></p>
+            </article>
+
+            <br><br>
+
+            <article class="flexbox-container ">
+                <!-- <div class="section-heading"><h2>the difference between flex and inline-flex</h2></div> -->
+                <div class="flexbox-container is-column-reverse">
+                    <div class="flex-item a">A</div>
+                    <div class="flex-item b">B</div>
+                    <div class="flex-item c">C</div>
+                    <div class="flex-item d">D</div>
+                    <div class="flex-item e">E</div>
+                </div>
+                <p><strong><code>flex-direction: column-reverse;</code></strong></p>
+            </article>  
+        </section>
+
+        <section>
+            <h2>**************************</h2>
+            <article class="flexbox-container">
+                <div class="section-heading">
+                    <dl>
+                        <dt><strong>the <code>flex-wrap</code> property</strong></dt>
+                        <dd>
+                            <dl>
+                                <dt><strong>Possible Values:</strong></dt>
+                                <dd><em><code>nowrap | wrap | wrap-reverse</code></em></dd>
+                                <dt><strong>Default Value:</strong></dt>
+                                <dd><em><code>nowrap</code></em></dd>
+                            
+                            </dl>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="flexbox-container is-nowrap">
+                    <div class="flex-item a">A</div>
+                    <div class="flex-item b">B</div>
+                    <div class="flex-item c">C</div>
+                    <div class="flex-item d">D</div>
+                    <div class="flex-item e">E</div>
+                    <div class="flex-item f">F</div>
+                    <div class="flex-item g">G</div>
+                    <div class="flex-item h">H</div>
+                    <div class="flex-item i">I</div>
+                    <div class="flex-item j">J</div>
+                </div>
+                <p><strong><code>flex-wrap: nowrap;</code></strong></p>
+            </article>
+
+            <br><br>
+
+            <article class="flexbox-container ">
+                <!-- <div class="section-heading"><h2>the difference between flex and inline-flex</h2></div> -->
+                <div class="flexbox-container is-wrap">
+                    <div class="flex-item a">A</div>
+                    <div class="flex-item b">B</div>
+                    <div class="flex-item c">C</div>
+                    <div class="flex-item d">D</div>
+                    <div class="flex-item e">E</div>
+                    <div class="flex-item f">F</div>
+                    <div class="flex-item g">G</div>
+                    <div class="flex-item h">H</div>
+                    <div class="flex-item i">I</div>
+                    <div class="flex-item j">J</div>
+                </div>
+                <p><strong><code>flex-wrap: wrap;</code></strong></p>
+            </article>    
+            
+            <br><br><br><br>
+
+            <article class="flexbox-container ">
+                <!-- <div class="section-heading"><h2>the difference between flex and inline-flex</h2></div> -->
+                <div class="flexbox-container is-wrap-reverse">
+                    <div class="flex-item a">A</div>
+                    <div class="flex-item b">B</div>
+                    <div class="flex-item c">C</div>
+                    <div class="flex-item d">D</div>
+                    <div class="flex-item e">E</div>
+                    <div class="flex-item f">F</div>
+                    <div class="flex-item g">G</div>
+                    <div class="flex-item h">H</div>
+                    <div class="flex-item i">I</div>
+                    <div class="flex-item j">J</div>
+                </div>
+                <p><strong><code>flex-wrap: wrap-reverse;</code></strong></p>
+            </article> 
+
+       
+        </section>
+
+        <section>
+            <h2>**************************</h2>
+            <article class="flexbox-container">
+                <div class="section-heading">
+                    <dl>
+                        <dt><strong>the <code>flex-flow</code> shorthand property</strong></dt>
+                        <dd>
+                            <dl>
+                                <dt><strong>Values:</strong></dt>
+                                <dd><em>values of <code>flex-direction</code> || values of <code>flex-wrap</code></em></dd>
+                                <dt><strong>Default Value:</strong></dt>
+                                <dd><em><code>row nowrap</code></em></dd>
+                            
+                            </dl>
+                        </dd>
+                    </dl>
+                </div>
+ 
+ 
+                    <!-- <div class="section-heading"><h2>the difference between flex and inline-flex</h2></div> -->
+                    <div class="flexbox-container is-flow-row-nowrap">
+                        <div class="flex-item a">A</div>
+                        <div class="flex-item b">B</div>
+                        <div class="flex-item c">C</div>
+                        <div class="flex-item d">D</div>
+                        <div class="flex-item e">E</div>
+                        <div class="flex-item f">F</div>
+                        <div class="flex-item g">G</div>
+                        <div class="flex-item h">H</div>
+                        <div class="flex-item i">I</div>
+                        <div class="flex-item j">J</div>
+                    </div>
+                    <p><strong><code>flex-flow: row nowrap;</code></strong></p>
+                </article>    
+
+                <br><br>
+    
+                <article class="flexbox-container ">
+    
+                <div class="flexbox-container is-flow-column-wrap">
+                    <div class="flex-item a">A</div>
+                    <div class="flex-item b">B</div>
+                    <div class="flex-item c">C</div>
+                    <div class="flex-item d">D</div>
+                    <div class="flex-item e">E</div>
+                    <div class="flex-item f">F</div>
+                    <div class="flex-item g">G</div>
+                    <div class="flex-item h">H</div>
+                    <div class="flex-item i">I</div>
+                    <div class="flex-item j">J</div>
+                </div>
+                <p><strong><code>flex-flow: column wrap;</code></strong></p>
+            </article>
+         
+            <br><br>
+
+            <article class="flexbox-container ">
+                <!-- <div class="section-heading"><h2>the difference between flex and inline-flex</h2></div> -->
+                <div class="flexbox-container is-flow-column-wrap-reverse">
+                    <div class="flex-item a">A</div>
+                    <div class="flex-item b">B</div>
+                    <div class="flex-item c">C</div>
+                    <div class="flex-item d">D</div>
+                    <div class="flex-item e">E</div>
+                    <div class="flex-item f">F</div>
+                    <div class="flex-item g">G</div>
+                    <div class="flex-item h">H</div>
+                    <div class="flex-item i">I</div>
+                    <div class="flex-item j">J</div>
+                </div>
+                <p><strong><code>flex-flow: column wrap-reverse;</code></strong></p>
+            </article> 
+
+       
+        </section>
+
+        <section>
+            <h2>**************************</h2>
+            <article class="flexbox-container">
+                <div class="section-heading">
+                    <dl>
+                        <dt><strong>the <code>justify-content</code> property</strong></dt>
+                        <dd>
+                            <dl>
+                                <dt><strong>Possible Values:</strong></dt>
+                                <dd><em><code>flex-start | flex-end | center | space-between | space-around | space-evenly | initial | inherit</code></em></dd>
+                                <dt><strong>Default Value:</strong></dt>
+                                <dd><em><code>flex-start</code></em></dd>
+                            
+                            </dl>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="flexbox-container is-JC-flex-start">
+                    <div class="flex-item a">A</div>
+                    <div class="flex-item b">B</div>
+                    <div class="flex-item c">C</div>
+                    <div class="flex-item d">D</div>
+                    <div class="flex-item e">E</div>
+                  
+                </div>
+                <p><strong><code>justify-content: flex-start;</code></strong></p>
+            </article>
+
+            <br><br>
+
+            <article class="flexbox-container ">
+                <!-- <div class="section-heading"><h2>the difference between flex and inline-flex</h2></div> -->
+                <div class="flexbox-container is-JC-flex-end">
+                    <div class="flex-item a">A</div>
+                    <div class="flex-item b">B</div>
+                    <div class="flex-item c">C</div>
+                    <div class="flex-item d">D</div>
+                    <div class="flex-item e">E</div>
+                 
+                </div>
+                <p><strong><code>justify-content: flex-end;</code></strong></p>
+            </article>    
+            
+            <br><br>
+
+            <article class="flexbox-container ">
+                <!-- <div class="section-heading"><h2>the difference between flex and inline-flex</h2></div> -->
+                <div class="flexbox-container is-JC-center">
+                    <div class="flex-item a">A</div>
+                    <div class="flex-item b">B</div>
+                    <div class="flex-item c">C</div>
+                    <div class="flex-item d">D</div>
+                </div>
+                <p><strong><code>justify-content: center;</code></strong></p>
+            </article> 
+
+            <br><br>
+
+            <article class="flexbox-container ">
+                <!-- <div class="section-heading"><h2>the difference between flex and inline-flex</h2></div> -->
+                <div class="flexbox-container is-JC-space-between">
+                    <div class="flex-item a">A</div>
+                    <div class="flex-item b">B</div>
+                    <div class="flex-item c">C</div>
+                    <div class="flex-item d">D</div>
+                </div>
+                <p><strong><code>justify-content: space-between;</code></strong></p>
+            </article> 
+
+            
+            <br><br>
+
+            <article class="flexbox-container ">
+                <!-- <div class="section-heading"><h2>the difference between flex and inline-flex</h2></div> -->
+                <div class="flexbox-container is-JC-space-around">
+                    <div class="flex-item a">A</div>
+                    <div class="flex-item b">B</div>
+                    <div class="flex-item c">C</div>
+                    <div class="flex-item d">D</div>
+                </div>
+                <p><strong><code>justify-content: space-around;</code></strong></p>
+            </article> 
+
+            <br><br>
+
+            <article class="flexbox-container ">
+                <!-- <div class="section-heading"><h2>the difference between flex and inline-flex</h2></div> -->
+                <div class="flexbox-container is-JC-space-evenly">
+                    <div class="flex-item a">A</div>
+                    <div class="flex-item b">B</div>
+                    <div class="flex-item c">C</div>
+                    <div class="flex-item d">D</div>
+                </div>
+                <p><strong><code>justify-content: space-evenly;</code></strong></p>
+            </article> 
+
+       
+        </section>
+
+        <section class="align-items">
+            <div class="align-items row">
+                <h2>**************************</h2>
+                <article class="flexbox-container">
+                    <div class="section-heading">
+                                    
+                        <dl>
+                            <dt><strong>the <code>align-items</code> property (<code>flex-direction: row;</code>)</strong></dt>
+                            <dd>
+                                <dl>
+                                    <dt><strong>Possible Values:</strong></dt>
+                                    <dd><em><code>flex-start | flex-end | center | baseline | stretch | initial | inherit</code></em></dd>
+                                    <dt><strong>Default Value:</strong></dt>
+                                    <dd><em><code>stretch</code></em></dd>
+                                
+                                </dl>
+                            </dd>
+                        </dl>
+                        
+                    </div>
+                </article>
+                <article class="flexbox-container ">
+        
+                    <div class="flexbox-container is-AI-flex-start">
+                        <div class="flex-item aa">A</div>
+                        <div class="flex-item bb">B</div>
+                        <div class="flex-item cc">C</div>
+                        <div class="flex-item dd">D</div>
+                        <div class="flex-item ee">E</div>                  
+                    </div>
+                    <p><strong><code>align-items: flex-start;</code></strong></p>
+                </article>           
+
+                <br><br>
+                <article class="flexbox-container ">
+                <div class="flexbox-container is-AI-flex-end">
+                    <div class="flex-item aa">A</div>
+                    <div class="flex-item bb">B</div>
+                    <div class="flex-item cc">C</div>
+                    <div class="flex-item dd">D</div>
+                    <div class="flex-item ee">E</div>                  
+                </div>
+                <p><strong><code>align-items: flex-end;</code></strong></p>
+                </article>
+                
+                <br><br>
+                <article class="flexbox-container ">
+                <div class="flexbox-container is-AI-center">
+                    <div class="flex-item aa">A</div>
+                    <div class="flex-item bb">B</div>
+                    <div class="flex-item cc">C</div>
+                    <div class="flex-item dd">D</div>
+                    <div class="flex-item ee">E</div>                  
+                </div>
+                <p><strong><code>align-items: center;</code></strong></p>
+                </article>
+                
+                <br><br>
+                <article class="flexbox-container ">
+                    <div class="flexbox-container is-AI-baseline">
+                        <div class="flex-item aa">A</div>
+                        <div class="flex-item bb">B</div>
+                        <div class="flex-item cc">C</div>
+                        <div class="flex-item dd">D</div>
+                        <div class="flex-item ee">E</div>                  
+                    </div>
+                    <p><strong><code>align-items: baseline;</code></strong></p>
+                </article>
+
+                <br><br>
+
+                <article class="flexbox-container ">
+                <div class="flexbox-container is-AI-stretch">
+                    <div class="flex-item aa">A</div>
+                    <div class="flex-item bb">B</div>
+                    <div class="flex-item cc">C</div>
+                    <div class="flex-item dd">D</div>
+                    <div class="flex-item ee">E</div>                  
+                </div>
+                <p><strong><code>align-items: stretch;</code></strong></p>
+                </article>
+
+                <br><br>
+
+                <article class="flexbox-container initial">
+                <div class="flexbox-container is-AI-initial">
+                    <div class="flex-item aa">A</div>
+                    <div class="flex-item bb">B</div>
+                    <div class="flex-item cc">C</div>
+                    <div class="flex-item dd">D</div>
+                    <div class="flex-item ee">E</div>                  
+                </div>
+                <p><strong><code>align-items: initial;</code></strong></p>
+                </article>
+
+                <br><br>
+            
+                <article class="flexbox-container inherit">
+                    <div class="flexbox-container is-AI-inherit">
+                        <div class="flex-item aa">A</div>
+                        <div class="flex-item bb">B</div>
+                        <div class="flex-item cc">C</div>
+                        <div class="flex-item ee">E</div>                  
+                        <div class="flex-item dd">D</div>
+                    </div>
+                    <p><strong><code>align-items: inherit;</code></strong></p>
+                </article>
+            </div>
+          
+            
+            
+            <div class="align-items column">
+
+                <h2>**************************</h2>
+                <article class="flexbox-container">
+                    <div class="section-heading">
+                                    
+                        <dl>
+                            <dt><strong>the <code>align-items</code> property (<code>flex-direction: column;</code>)</strong></dt>
+                            <dd>
+                                <dl>
+                                    <dt><strong>Possible Values:</strong></dt>
+                                    <dd><em><code>flex-start | flex-end | center | baseline | stretch | initial | inherit</code></em></dd>
+                                    <dt><strong>Default Value:</strong></dt>
+                                    <dd><em><code>stretch</code></em></dd>
+                                
+                                </dl>
+                            </dd>
+                        </dl>
+                        
+                    </div>
+                </article>
+                <article class="flexbox-container ">
+        
+                    <div class="flexbox-container is-AI-flex-start  column">
+                        <div class="flex-item aa">A</div>
+                        <div class="flex-item bb">B</div>
+                        <div class="flex-item cc">C</div>
+                        <div class="flex-item dd">D</div>
+                        <div class="flex-item ee">E</div>                  
+                    </div>
+                    <p><strong><code>align-items: flex-start;</code></strong></p>
+                </article>           
+
+                <br><br>
+                <article class="flexbox-container ">
+                <div class="flexbox-container is-AI-flex-end  column">
+                    <div class="flex-item aa">A</div>
+                    <div class="flex-item bb">B</div>
+                    <div class="flex-item cc">C</div>
+                    <div class="flex-item dd">D</div>
+                    <div class="flex-item ee">E</div>                  
+                </div>
+                <p><strong><code>align-items: flex-end;</code></strong></p>
+                </article>
+                
+                <br><br>
+                <article class="flexbox-container ">
+                    <div class="flexbox-container is-AI-center  column">
+                        <div class="flex-item aa">A</div>
+                        <div class="flex-item bb">B</div>
+                        <div class="flex-item cc">C</div>
+                        <div class="flex-item dd">D</div>
+                        <div class="flex-item ee">E</div>                  
+                    </div>
+                    <p><strong><code>align-items: center;</code></strong></p>
+                </article>
+                
+                <br><br>
+                <article class="flexbox-container ">
+                    <div class="flexbox-container is-AI-baseline  column">
+                        <div class="flex-item aa">A</div>
+                        <div class="flex-item bb">B</div>
+                        <div class="flex-item cc">C</div>
+                        <div class="flex-item dd">D</div>
+                        <div class="flex-item ee">E</div>                  
+                    </div>
+                    <p><strong><code>align-items: baseline;</code></strong></p>
+                </article>
+
+                <br><br>
+
+                <article class="flexbox-container ">
+                    <div class="flexbox-container is-AI-stretch column">
+                        <div class="flex-item aa">A</div>
+                        <div class="flex-item bb">B</div>
+                        <div class="flex-item cc">C</div>
+                        <div class="flex-item dd">D</div>
+                        <div class="flex-item ee">E</div>                  
+                    </div>
+                    <p><strong><code>align-items: stretch;</code></strong></p>
+                </article>
+
+                <br><br>
+
+                <article class="flexbox-container initial column">
+                    <div class="flexbox-container is-AI-initial column">
+                        <div class="flex-item aa">A</div>
+                        <div class="flex-item bb">B</div>
+                        <div class="flex-item cc">C</div>
+                        <div class="flex-item dd">D</div>
+                        <div class="flex-item ee">E</div>                  
+                    </div>
+                    <p><strong><code>align-items: initial;</code></strong></p>
+                    </article>
+
+                    <br><br>
+            
+                <article class="flexbox-container inherit column">
+                    <div class="flexbox-container is-AI-inherit column">
+                        <div class="flex-item aa">A</div>
+                        <div class="flex-item bb">B</div>
+                        <div class="flex-item cc">C</div>
+                        <div class="flex-item ee">E</div>                  
+                        <div class="flex-item dd">D</div>
+                    </div>
+                    <p><strong><code>align-items: inherit;</code></strong></p>
+                </article>
+            </div>     
+        </section>
+
+        
+        <section class="align-content">
+            <div class="align-items row">
+                <h2>**************************</h2>
+                <article class="flexbox-container">
+                    <div class="section-heading">
+                                    
+                        <dl>
+                            <dt><strong>the <code>align-content</code> property</strong></dt>
+                            <dd>
+                                <dl>
+                                    <dt><strong>Possible Values:</strong></dt>
+                                    <dd><em><code>flex-start | flex-end | center | space-between | space-around | stretch | space-evenly | initial | inherit</code></em></dd>
+                                    <dt><strong>Default Value:</strong></dt>
+                                    <dd><em><code>stretch</code></em></dd>
+                                
+                                </dl>
+                            </dd>
+                        </dl>
+                        
+                    </div>
+                </article>
+                <article class="flexbox-container ">
+        
+                    <div class="flexbox-container is-AC-flex-start">
+                        <div class="flex-item aa">A</div>
+                        <div class="flex-item bb">B</div>
+                        <div class="flex-item cc">C</div>
+                        <div class="flex-item dd">D</div>
+                        <div class="flex-item ee">E</div>                  
+                    </div>
+                    <p><strong><code>align-items: flex-start;</code></strong></p>
+                </article>           
+
+                <br><br>
+                <article class="flexbox-container ">
+                <div class="flexbox-container is-AC-flex-end">
+                    <div class="flex-item aa">A</div>
+                    <div class="flex-item bb">B</div>
+                    <div class="flex-item cc">C</div>
+                    <div class="flex-item dd">D</div>
+                    <div class="flex-item ee">E</div>                  
+                </div>
+                <p><strong><code>align-items: flex-end;</code></strong></p>
+                </article>
+                
+                <br><br>
+                <article class="flexbox-container ">
+                <div class="flexbox-container is-AC-center">
+                    <div class="flex-item aa">A</div>
+                    <div class="flex-item bb">B</div>
+                    <div class="flex-item cc">C</div>
+                    <div class="flex-item dd">D</div>
+                    <div class="flex-item ee">E</div>                  
+                </div>
+                <p><strong><code>align-items: center;</code></strong></p>
+                </article>
+                
+                
+
+                <br><br>
+
+                <article class="flexbox-container ">
+                <div class="flexbox-container is-AC-stretch">
+                    <div class="flex-item aa">A</div>
+                    <div class="flex-item bb">B</div>
+                    <div class="flex-item cc">C</div>
+                    <div class="flex-item dd">D</div>
+                    <div class="flex-item ee">E</div>                  
+                </div>
+                <p><strong><code>align-items: stretch;</code></strong></p>
+                </article>
+
+                <br><br>
+
+                
+                <article class="flexbox-container ">
+                    <div class="flexbox-container is-AC-space-evenly">
+                        <div class="flex-item aa">A</div>
+                        <div class="flex-item bb">B</div>
+                        <div class="flex-item cc">C</div>
+                        <div class="flex-item dd">D</div>
+                        <div class="flex-item ee">E</div>                  
+                    </div>
+                    <p><strong><code>align-content: space-evenly;</code></strong></p>
+                    </article>
+    
+                    <br><br>
+
+                <article class="flexbox-container initial">
+                <div class="flexbox-container is-AC-initial">
+                    <div class="flex-item aa">A</div>
+                    <div class="flex-item bb">B</div>
+                    <div class="flex-item cc">C</div>
+                    <div class="flex-item dd">D</div>
+                    <div class="flex-item ee">E</div>                  
+                </div>
+                <p><strong><code>align-content: initial;</code></strong></p>
+                </article>
+
+                <br><br>
+            
+                <article class="flexbox-container inherit">
+                    <div class="flexbox-container is-AC-inherit">
+                        <div class="flex-item aa">A</div>
+                        <div class="flex-item bb">B</div>
+                        <div class="flex-item cc">C</div>
+                        <div class="flex-item ee">E</div>                  
+                        <div class="flex-item dd">D</div>
+                    </div>
+                    <p><strong><code>align-content: inherit;</code></strong></p>
+                </article>
+            </div>
+        </section>
+
+    </div>
+    </main>
+</body>
+</html>

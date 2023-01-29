@@ -1,0 +1,635 @@
+/* https://www.zeninvader.com/css-flexbox-comprehensive-guide/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;0,900;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+h2 { 
+  font-size: 4rem; 
+  margin-top: 40px;
+}
+
+div.flex-container.properties {
+    display: flex;
+    background-color: transparent;
+}
+
+    
+
+div.section-heading > dl {
+    background-color: rgba(165, 42, 42, 0.571);
+    font-size: 2.5rem;
+    font-variant: small-caps;
+    width: 950px;
+    margin: 10px;
+}
+
+div.section-heading dt code {
+        font-variant: normal;
+        color: azure;
+        font-size: 2.2rem;
+    }
+
+div.section-heading dd > dl {
+        border: 3px solid black;
+        font-size: 2rem;
+        padding-left: 30px;
+    }
+
+div.section-heading dd code {
+        font-variant: normal;
+        color: azure;
+    }
+
+
+
+/***********************************/    
+/************flex-items*************/
+
+.flex-item {
+    border: 1px solid blue;
+    color: rgb(165, 42, 138);
+    background-color: bisque;
+    font-size: 2rem;
+    min-width: 100px;  max-width: 100px;
+    min-height: 100px; max-height: 100px;
+
+    margin: 10px;
+
+}
+
+        div.aa {
+            border: 1px solid blue;
+            color: rgb(165, 42, 138);
+            background-color: bisque;
+            font-size: 2rem;
+            width: 100px;
+            min-height: 100px; 
+            margin: 10px;
+
+        }
+
+        div.bb {
+            border: 1px solid blue;
+            color: rgb(165, 42, 138);
+            background-color: bisque;
+            font-size: 2rem;
+            width: 100px;  
+            min-height: 120px; 
+            margin: 10px;
+
+        }
+
+        
+        div.cc {
+            border: 1px solid blue;
+            color: rgb(165, 42, 138);
+            background-color: bisque;
+            font-size: 2rem;
+            width: 100px;
+            min-height: 140px; 
+            margin: 10px;
+
+        }
+
+        
+        div.dd {
+            border: 1px solid blue;
+            color: rgb(165, 42, 138);
+            background-color: bisque;
+            font-size: 2rem;
+            width: 100px;
+            min-height: 160px; 
+            margin: 10px;
+
+        }
+
+        
+        div.ee {
+            border: 1px solid blue;
+            color: rgb(165, 42, 138);
+            background-color: bisque;
+            font-size: 2rem;
+            width: 100px;  
+            min-height: 180px; 
+
+            margin: 10px;
+
+        }
+
+/***********************************/
+/***********************************/
+/***********************************/
+
+article p {
+    font-size: 2rem;
+    background-color: bisque;  
+    margin: 5px;
+    max-width: 950px;
+}
+
+
+
+
+
+article.flexbox-container {
+    border: 2px dashed red;
+/**/display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    /* width: 900px; */
+
+}
+
+    div.is-flex {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+        background-color: aqua;
+        width: 900px;
+
+    }
+
+    div.is-inline-flex {
+        border: 2px dashed red;
+        display: inline-flex;
+        flex-direction: row;
+        background-color: aqua;
+        width: 900px;
+
+    }
+
+    /****************************************/
+
+    /*******flex-direction: values;**********/
+    
+    /****************************************/
+    div.is-row {
+        border: 2px dashed red;
+        display: flex;
+    /**/flex-direction: row;
+        background-color: goldenrod;
+        width: 900px;
+    }
+
+    div.is-row-reverse {
+        border: 2px dashed red;
+        display: flex;
+    /**/flex-direction: row-reverse;
+        background-color: goldenrod;
+        width: 900px;
+
+    }
+
+    div.is-column {
+        border: 2px dashed red;
+        display: flex;
+    /**/flex-direction: column;
+        background-color:  goldenrod;
+        width: 900px;
+
+    }
+
+    div.is-column-reverse {
+        border: 2px dashed red;
+        display: flex;
+    /**/flex-direction: column-reverse;
+        background-color: goldenrod;
+        width: 900px;
+
+    }
+
+    /****************************************/  
+    
+    /*******flex-wrap: values;**********/
+    
+    /****************************************/
+    
+    div.is-nowrap {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /**/flex-wrap: nowrap;
+        background-color: aqua;
+        width: 900px;
+    }
+
+    div.is-wrap {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /**/flex-wrap: wrap;
+        background-color: aqua;
+        width: 900px;
+    }
+
+    div.is-wrap-reverse {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /**/flex-wrap: wrap-reverse;
+        background-color: aqua;
+        width: 900px;
+    }
+
+    /****************************************/  
+    
+    /*******flex-flow shorthand**********/
+    
+    /****************************************/
+    
+    div.is-flow-row-nowrap {
+        border: 2px dashed red;
+        display: flex;
+    /**/flex-flow: row nowrap;
+        background-color: goldenrod;
+        max-width: 900px;
+        max-height: 400px;
+    }
+
+    div.is-flow-column-wrap {
+        border: 2px dashed red;
+        display: flex;
+    /**/flex-flow: column wrap;
+        background-color: goldenrod;
+        max-width: 900px;
+        max-height: 400px;
+    }
+
+    div.is-flow-column-wrap-reverse {
+        border: 2px dashed red;
+        display: flex;
+    /**/flex-flow: column wrap-reverse;
+        background-color: goldenrod;
+        max-width: 900px;
+        max-height: 400px;
+    }
+
+    /****************************************/  
+    
+    /*******justify-content property**********/
+    
+    /****************************************/
+
+    div.is-JC-flex-start {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /**/justify-content: flex-start;
+        background-color: aqua;
+        width: 900px;
+    }
+
+    div.is-JC-flex-end {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /**/justify-content: flex-end;
+        background-color: aqua;
+        width: 900px;
+    }
+
+    div.is-JC-center {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /**/justify-content: center;
+        background-color: aqua;
+        width: 900px;
+    }
+
+    div.is-JC-space-between {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /**/justify-content: space-between;
+        background-color: aqua;
+        width: 900px;
+    }
+
+    
+    div.is-JC-space-around {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /**/justify-content: space-around;
+        background-color: aqua;
+        width: 900px;
+    }
+
+    div.is-JC-space-evenly {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /**/justify-content: space-evenly;
+        background-color: aqua;
+        width: 900px;
+    }
+   
+    /*START OF: ALIGN-ITEMS PROPERTY*/
+
+    /****************************************/  
+    
+    /*******align-items property (flex-direction: row;)**********/
+    
+    /****************************************/
+    /* how flex items are aligned along its flex line's cross-axis.*/
+
+    section.align-items {
+        border-color: 3px solid yellow;
+        background-color: rgb(0, 255, 234);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    div.is-AI-flex-start {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /* justify-content: space-evenly; */
+    /**/align-items: flex-start;
+        background-color: goldenrod;
+        width: 900px;
+        height: 200px;
+    }
+
+    div.is-AI-flex-end {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /* justify-content: space-evenly; */
+    /**/align-items: flex-end;
+        background-color: goldenrod;
+        width: 900px;
+        height: 200px;
+    }
+
+    div.is-AI-center {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /* justify-content: space-evenly; */
+    /**/align-items: center;
+        background-color: goldenrod;
+        width: 900px;
+        height: 200px;
+    }
+
+    div.is-AI-baseline {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /* justify-content: space-evenly; */
+    /**/align-items: baseline;
+        background-color: goldenrod;
+        width: 900px;
+        height: 200px;
+    }
+
+    div.is-AI-stretch {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /* justify-content: space-evenly; */
+    /**/align-items: stretch;
+        background-color: goldenrod;
+        width: 900px;
+        height: 200px;
+    }
+
+    div.is-AI-initial {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /* justify-content: space-evenly; */
+    /**/align-items: initial;
+        background-color: goldenrod;
+        width: 900px;
+        height: 200px;
+    }
+
+    div.is-AI-inherit {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: row;
+    /* justify-content: space-evenly; */
+    /**/align-items: inherit;
+        background-color: goldenrod;
+        width: 900px;
+        height: 200px;
+        
+    }
+
+    article.initial,
+    article.inherit {
+        display: none;
+    }
+   
+    /****************************************/  
+    /*(flex-direction: column;)*/
+    /*******align-items property **********/
+    
+    /****************************************/
+
+
+    div.is-AI-flex-start.column {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    /**/align-items: flex-start;
+        background-color: goldenrod;
+        width: 500px;
+        height: 600px;
+        align-self:auto ;
+    }
+
+    div.is-AI-flex-end.column {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: column;
+       flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    /**/align-items: flex-end;
+        background-color: goldenrod;
+        width: 500px;
+        height: 600px;
+        align-self:auto ;
+    }
+
+    div.is-AI-center.column {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    /**/align-items: center;
+        background-color: goldenrod;
+        width: 500px;
+        height: 600px;
+        align-self:auto ;
+    }
+
+    div.is-AI-baseline.column {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    /**/align-items: baseline;
+        background-color: goldenrod;
+        width: 500px;
+        height: 600px;
+        align-self:auto ;
+    }
+
+    div.is-AI-stretch.column {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: column;
+    /* justify-content: space-evenly; */
+    /**/align-items: stretch;
+        /* flex-wrap: wrap; */
+        background-color: goldenrod;
+        width: 500px;
+        height: 600px;
+        align-self:auto ;
+    }
+
+    div.is-AI-initial.column {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    /**/align-items: initial;
+        background-color: goldenrod;
+        width: 500px;
+        height: 600px;
+        align-self:auto ;
+    }
+
+    div.is-AI-inherit.column {
+        border: 2px dashed red;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    /**/align-items: inherit;
+        background-color: goldenrod;
+        width: 500px;
+        height: 600px;
+        align-self:auto ;
+            
+    }
+
+    article.initial,
+    article.inherit {
+        display: none;
+    }
+
+
+/* END OF: ALIGN-ITEMS PROPERTY*/
+
+/* START OF: ALIGN-CONTENT PROPERTY*/
+
+section.align-content {
+    border-color: 3px solid yellow;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.is-AC-flex-start {
+    border: 2px dashed red;
+    display: flex;
+    flex-direction: row;
+/* justify-content: space-evenly; */
+/**/align-content: flex-start;
+    background-color: goldenrod;
+    width: 900px;
+    height: 900px;
+}
+
+div.is-AC-flex-end {
+    border: 2px dashed red;
+    display: flex;
+    flex-direction: row;
+/* justify-content: space-evenly; */
+/**/align-self: center;
+    background-color: goldenrod;
+    width: 900px;
+    height: 900px;
+}
+
+div.is-AC-center {
+    border: 2px dashed red;
+    display: flex;
+    flex-direction: row;
+/* justify-content: space-evenly; */
+/**/align-content: center;
+    background-color: goldenrod;
+    width: 900px;
+    height: 200px;
+}
+
+
+
+div.is-AC-stretch {
+    border: 2px dashed red;
+    display: flex;
+    flex-direction: row;
+/* justify-content: space-evenly; */
+/**/align-content: stretch;
+    background-color: goldenrod;
+    width: 900px;
+    height: 200px;
+}
+
+
+div.is-AC-space-evenly {
+    border: 2px dashed red;
+    display: flex;
+    flex-direction: row;
+/* justify-content: space-evenly; */
+/**/align-content: space-evenly;
+    background-color: goldenrod;
+    width: 900px;
+    height: 200px;
+}
+
+div.is-AI-initial {
+    border: 2px dashed red;
+    display: flex;
+    flex-direction: row;
+/* justify-content: space-evenly; */
+/**/align-content: initial;
+    background-color: goldenrod;
+    width: 900px;
+    height: 200px;
+}
+
+div.is-AC-inherit {
+    border: 2px dashed red;
+    display: flex;
+    flex-direction: row;
+/* justify-content: space-evenly; */
+/**/align-content: inherit;
+    background-color: goldenrod;
+    width: 900px;
+    height: 200px;
+    
+}
+
+article.initial,
+article.inherit {
+    display: none;
+}
